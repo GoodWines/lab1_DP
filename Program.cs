@@ -1,19 +1,30 @@
 using System;
 
-namespace HelloWorldApp
+namespace HelloApp
 {
     /// <summary>
-    /// Основна програма, яка демонструє вивід повідомлення на екран.
+    /// Клас для виведення привітання
     /// </summary>
-    class Program
+    public class Hello
     {
         /// <summary>
-        /// Точка входу в програму.
-        /// Виводить "Hello World!" у консоль.
+        /// Метод для виведення "Hello World!"
         /// </summary>
-        static void Main(string[] args)
+        public void SayHello()
         {
             Console.WriteLine("Hello World!");
+        }
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Створюємо об'єкт класу Hello
+            Hello hello = new Hello();
+            
+            // Викликаємо метод для виведення привітання
+            hello.SayHello();
         }
     }
 }

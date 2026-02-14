@@ -1,1 +1,1 @@
-vdfvdfvdfvdfvdfv
+Програма виводить текст (Hello World!).
